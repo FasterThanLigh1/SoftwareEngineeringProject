@@ -2,6 +2,67 @@ nav, header, footer {
     display: block;
 }
 
+#section {
+    transition: all 0.5s ease;
+}
+
+.totalText {
+    font-size: 40px;
+    color:rgb(39, 88, 248)
+}
+
+.sidebar {
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: gainsboro;
+    color: green;
+    transition: all .5s ease;/*create transition time in 0.5s*/
+}
+
+.sidebar header {
+    font-size: 22px;
+    height: 70px;
+    line-height: 70px;
+    color: white;
+    text-align: center;
+    list-style: 70px;
+    background-color: rgb(39, 88, 248);
+    user-select: none;
+}
+
+.sidebar ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(39, 88, 248);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rbga(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;/*make the button float when hover*/
+}
+
+.purchaseButton {
+    position: absolute;
+    text-align: center;
+    display: block;
+    text-align: center;
+    top: 460px;
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+
 body {
     line-height: 1;
     margin: 0;
@@ -82,8 +143,8 @@ article {
     align-items: center;
 }
 
-button {
-    font-size: 32px;
+button.paymentButton {
+    font-size: 25px;
     font-weight: 700;
     color: white;
     background-color: #0069ff;
@@ -97,6 +158,18 @@ button {
 button.learnMore {
     display: block;
     margin: auto;
+}
+
+.price {
+    font-size: 30px;
+    display: inline-block;
+}
+
+button.functionButton {
+    font-size: 30px;
+    width: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .row::after {
@@ -158,7 +231,7 @@ div.box {
     padding: 36px 24px 40px 24px;
     border-radius: 7px;
     background-color: #FFF;
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px #666;
 }
 
 
@@ -190,7 +263,7 @@ footer.footClass ul li {
 
 /*Custom style*/
 #section-1-gradient {
-    background-image: linear-gradient(#076DFF, #65a5ff);
+    background-image: linear-gradient(#666, white);
 }
 
 div.left-col {
@@ -202,7 +275,7 @@ div.rightSide-Col {
 }
 
 /*MOBILE*/
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
     ul.topnav li:not(:nth-child(1)){
         display: none;
     }
