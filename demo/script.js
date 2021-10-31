@@ -3,6 +3,18 @@ const sidemenu = document.getElementById("side");
 const purchaseButton = document.getElementById("purchase");
 const section = document.getElementById("section");
 
+var node = document.createElement("LI");
+//node.className="sidebar" ;          // Create a <li> node
+var textnode = document.createTextNode("Water");         // Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+document.getElementById("list").appendChild(node);
+
+var x = window.innerWidth
+if( window.innerWidth < 1000)
+{
+    console.log("stop");
+}
+
 purchaseButton.addEventListener("click", () => {
     print();
 })
