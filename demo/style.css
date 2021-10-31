@@ -2,6 +2,51 @@ nav, header, footer {
     display: block;
 }
 
+#check:checked ~ section {
+    margin-right: 250px;
+}
+
+.sidebar {
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: blueviolet;
+    transition: all .5s ease;/*create transition time in 0.5s*/
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    list-style: 70px;
+    background-color: violet;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rbga(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;/*make the button float when hover*/
+}
+
+ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+
 body {
     line-height: 1;
     margin: 0;
@@ -158,7 +203,7 @@ div.box {
     padding: 36px 24px 40px 24px;
     border-radius: 7px;
     background-color: #FFF;
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px #666;
 }
 
 
@@ -190,7 +235,7 @@ footer.footClass ul li {
 
 /*Custom style*/
 #section-1-gradient {
-    background-image: linear-gradient(#076DFF, #65a5ff);
+    background-image: linear-gradient(#666, white);
 }
 
 div.left-col {
