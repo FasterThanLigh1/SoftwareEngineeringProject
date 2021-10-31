@@ -6,6 +6,11 @@ nav, header, footer {
     transition: all 0.5s ease;
 }
 
+.totalText {
+    font-size: 40px;
+    color:rgb(39, 88, 248)
+}
+
 .sidebar {
     position: fixed;
     right: -250px;
@@ -46,7 +51,7 @@ nav, header, footer {
     text-align: center;
     display: block;
     text-align: center;
-    top: 510px;
+    top: 460px;
 }
 
 ul li:hover a {
@@ -157,6 +162,7 @@ button.learnMore {
 
 .price {
     font-size: 30px;
+    display: inline-block;
 }
 
 button.functionButton {

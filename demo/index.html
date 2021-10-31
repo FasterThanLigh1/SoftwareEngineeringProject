@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="styleSheet" href="style.css">
+    <link rel="styleSheet" href="quanStyle.css">
 </head>
 <body>
     <nav>
@@ -18,14 +18,13 @@
     </nav>
     <div class="sidebar" id="side">
         <header>&#128722; Your cart</header>
-        <ul id="list">
-            <li>Do st</li>
-            <li>Do st</li>
-            <li>Do st</li>
-            <li>Do st</li>
-        </ul>
+        <ul id="list"></ul>
+        
         <div class="purchaseButton">
-            <button width="400px" class="paymentButton">
+            <div class="totalText" id="total">
+                cost: 0
+            </div>
+            <button class="paymentButton">
                 PAYMENT
             </button>
         </div>
@@ -34,7 +33,6 @@
     <section id="section">
 
     <h1 class="h1_header">FAST FOOD</h1>
-    
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -43,15 +41,15 @@
                         <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
-                        French fries
+                        Big French Fries
                     </label>
                     <p>
-                        Price: 29.000
+                        Price: 32.000
                     </p>
                     <div class="price">
-                        <button class="functionButton">-</button>
-                         0
-                        <button class="functionButton">+</button>
+                        <button class="functionButton" id="min0">-</button>
+                         <span id="quantity0">0</span>
+                        <button class="functionButton" id="add0">+</button>
                         </div>
                     </div>
             </div>
@@ -67,9 +65,9 @@
                         Price: 40.000 
                     </p>
                     <div class="price">
-                        <button class="functionButton">-</button>
-                         0
-                        <button class="functionButton">+</button>
+                        <button class="functionButton" id="min1">-</button>
+                        <span id="quantity1">0</span>
+                        <button class="functionButton" id="add1">+</button>
                         </div>
                     </div>
             </div>
@@ -79,15 +77,15 @@
                         <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
-                        French Fries
+                        Small French Fries
                     </label>
                     <p>
                         Price: 29.000 
                     </p>
                     <div class="price">
-                    <button class="functionButton">-</button>
-                     0
-                    <button class="functionButton">+</button>
+                    <button class="functionButton" id="min2">-</button>
+                    <span id="quantity2">0</span>
+                    <button class="functionButton" id="add2">+</button>
                     </div>
                 </div>
             </div>
@@ -103,9 +101,9 @@
                         Price: 50.000  
                     </p>
                     <div class="price">
-                        <button class="functionButton">-</button>
-                         0
-                        <button class="functionButton">+</button>
+                        <button class="functionButton" id="min3">-</button>
+                        <span id="quantity3">0</span>
+                        <button class="functionButton" id="add3">+</button>
                         </div>
                     </div>
             </div>
@@ -121,9 +119,9 @@
                         Price: 40.000
                     </p>
                     <div class="price">
-                        <button class="functionButton">-</button>
-                         0
-                        <button class="functionButton">+</button>
+                        <button class="functionButton" id="min4">-</button>
+                        <span id="quantity4">0</span>
+                        <button class="functionButton" id="add4">+</button>
                         </div>
                     </div>
             </div>
@@ -133,15 +131,15 @@
                         <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
-                        Yellow French Fries
+                        Yellow Fries
                     </label>
                     <p>
                         Price: 30.000 
                     </p>
                     <div class="price">
-                        <button class="functionButton">-</button>
-                         0
-                        <button class="functionButton">+</button>
+                        <button class="functionButton" id="min5">-</button>
+                        <span id="quantity5">0</span>
+                        <button class="functionButton" id="add5">+</button>
                         </div>
                     </div>
             </div>
@@ -153,6 +151,6 @@
 
     </section>
 
-    <script src="script.js"></script>
+    <script src="quanScript.js"></script>
 </body>
 </html>
