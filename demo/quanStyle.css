@@ -2,6 +2,12 @@ nav, header, footer {
     display: block;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #section {
     transition: all 0.5s ease;
 }
@@ -12,6 +18,7 @@ nav, header, footer {
 }
 
 .sidebar {
+    top: 74px;
     position: fixed;
     right: -250px;
     width: 250px;
@@ -23,19 +30,19 @@ nav, header, footer {
 
 .sidebar header {
     font-size: 22px;
-    height: 70px;
-    line-height: 70px;
+    line-height: 81px;
     color: white;
     text-align: center;
     list-style: 70px;
-    background-color: rgb(39, 88, 248);
+    background-color: #ff8000;
     user-select: none;
 }
 
 .sidebar ul {
+    overflow: scroll;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 350px;
     line-height: 65px;
     font-size: 20px;
     color: rgb(39, 88, 248);
@@ -62,7 +69,6 @@ ul li:hover a {
     margin-right: 16px;
 }
 
-
 body {
     line-height: 1;
     margin: 0;
@@ -73,13 +79,14 @@ nav {
     margin: 0;
 }
 
-h1.h1_header {
+.h1_header {
+    background-color: #e6e6e6;
     font-size: 30px;
     margin: 30px;
 }
 
 nav ul {
-    background-color: #eee;
+    background-color: #ff6600;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -102,11 +109,11 @@ ul.topnav li a {
     font-weight: 800;
     padding: 20px;
     text-transform: uppercase;
-    color: #0c0089;
+    color: #fff;
 }
 
 ul.topnav li a:hover {
-    background-color: #0080ff;
+    background-color: #ff944d;
     color: white
 }
 
@@ -115,7 +122,7 @@ ul.topnav li.dropdownIcon {
 }
 
 label {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -134,6 +141,7 @@ article {
     margin: auto;
     padding-top: 0%;
     padding-bottom: 4%;
+    background-color: #e6e6e6;
 }
 
 .row {
@@ -147,7 +155,7 @@ button.paymentButton {
     font-size: 25px;
     font-weight: 700;
     color: white;
-    background-color: #0069ff;
+    background-color: #ff6600;
     padding: 15px 60px;
     display: block;
     text-align: center;
@@ -225,13 +233,20 @@ h1.section2Header {
     text-align: center;
 }
 
+h1.section_header {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
 div.box {
     text-align: center;
+    background-color: #666;
     margin: 24px;
     padding: 36px 24px 40px 24px;
     border-radius: 7px;
     background-color: #FFF;
-    box-shadow: 0 0 10px #666;
+    box-shadow: 0 0 10px #ff6600;
 }
 
 
@@ -330,6 +345,13 @@ div.rightSide-Col {
     input[type="text"] {
         width: 350px;
 
+    }
+
+    button.functionButton {
+        font-size: 20px;
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
