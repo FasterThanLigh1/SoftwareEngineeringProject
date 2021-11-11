@@ -1,357 +1,439 @@
-nav, header, footer {
-    display: block;
+nav,
+header,
+footer {
+  display: block;
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #section {
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .totalText {
-    font-size: 40px;
-    color:rgb(39, 88, 248)
+  font-size: 40px;
+  color: rgb(39, 88, 248);
 }
 
 .sidebar {
-    top: 74px;
-    position: fixed;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: gainsboro;
-    color: green;
-    transition: all .5s ease;/*create transition time in 0.5s*/
+  top: 74px;
+  position: fixed;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: gainsboro;
+  color: green;
+  transition: all 0.5s ease; /*create transition time in 0.5s*/
 }
 
 .sidebar header {
-    font-size: 22px;
-    line-height: 81px;
-    color: white;
-    text-align: center;
-    list-style: 70px;
-    background-color: #ff8000;
-    user-select: none;
+  font-size: 22px;
+  line-height: 81px;
+  color: white;
+  text-align: center;
+  list-style: 70px;
+  background-color: #ff8000;
+  user-select: none;
 }
 
 .sidebar ul {
-    overflow: scroll;
-    display: block;
-    width: 100%;
-    height: 350px;
-    line-height: 65px;
-    font-size: 20px;
-    color: rgb(39, 88, 248);
-    padding-left: 40px;
-    box-sizing: border-box;
-    border-top: 1px solid rbga(255, 255, 255, .1);
-    border-bottom: 1px solid black;
-    transition: .4s;/*make the button float when hover*/
+  overflow: scroll;
+  display: block;
+  width: 100%;
+  height: 350px;
+  line-height: 65px;
+  font-size: 20px;
+  color: rgb(39, 88, 248);
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rbga(255, 255, 255, 0.1);
+  border-bottom: 1px solid black;
+  transition: 0.4s; /*make the button float when hover*/
 }
 
 .purchaseButton {
-    position: absolute;
-    text-align: center;
-    display: block;
-    text-align: center;
-    top: 460px;
+  position: absolute;
+  text-align: center;
+  display: block;
+  text-align: center;
+  top: 460px;
 }
 
 ul li:hover a {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 .sidebar ul a i {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 body {
-    line-height: 1;
-    margin: 0;
+  line-height: 1;
+  margin: 0;
 }
 
 nav {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 .h1_header {
-    background-color: #e6e6e6;
-    font-size: 30px;
-    margin: 30px;
+  background-color: #e6e6e6;
+  font-size: 30px;
+  margin: 30px;
 }
 
 nav ul {
-    background-color: #ff6600;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  background-color: #ff6600;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ul.topnav li {
-    list-style: none;
-    float: left;
+  list-style: none;
+  float: left;
 }
 
 ul.topnav li.topnav-right {
-    float: right;
+  float: right;
 }
 
 ul.topnav li a {
-    display: block;
-    text-decoration: none;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 800;
-    padding: 20px;
-    text-transform: uppercase;
-    color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 800;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 ul.topnav li a:hover {
-    background-color: #ff944d;
-    color: white
+  background-color: #ff944d;
+  color: white;
 }
 
 ul.topnav li.dropdownIcon {
-    display: none;
+  display: none;
 }
 
 label {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 p {
-    font-size: 25px;
-    line-height: 1.2;
+  font-size: 25px;
+  line-height: 1.2;
 }
 
 article {
-    font-size: 35px;
-    padding: 20px;
+  font-size: 35px;
+  padding: 20px;
 }
 
 .container {
-    width: 100%;
-    margin: auto;
-    padding-top: 0%;
-    padding-bottom: 4%;
-    background-color: #e6e6e6;
+  width: 100%;
+  margin: auto;
+  padding-top: 0%;
+  padding-bottom: 4%;
+  background-color: #e6e6e6;
 }
 
 .row {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 button.paymentButton {
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-    background-color: #ff6600;
-    padding: 15px 60px;
-    display: block;
-    text-align: center;
-    margin: 5px;
-    border-radius: 7px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  background-color: #ff6600;
+  padding: 15px 60px;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
 }
 
 button.learnMore {
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 .price {
-    font-size: 30px;
-    display: inline-block;
+  font-size: 30px;
+  display: inline-block;
 }
 
 button.functionButton {
-    font-size: 30px;
-    width: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
+  font-size: 30px;
+  width: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .row::after {
-    display: table;
-    clear: both;
-    content: "";
+  display: table;
+  clear: both;
+  content: "";
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%; display: inline-block;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 100%;}
-.col-12 {width: 100%;}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+  display: inline-block;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 100%;
+}
+.col-12 {
+  width: 100%;
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1.larger {
-    color: #fff;
-    font-size: 56px;
-    margin: 0;
-    line-height: 70px;
+  color: #fff;
+  font-size: 56px;
+  margin: 0;
+  line-height: 70px;
 }
 
 form h2 {
-    color: #fff;
+  color: #fff;
 }
 
-input[type="text"]{
-    font-size: 20px;
-    width: 400px;
-    min-width: 100px;
-    padding: 5px;
-    border-radius: 7px;
+input[type="text"] {
+  font-size: 20px;
+  width: 400px;
+  min-width: 100px;
+  padding: 5px;
+  border-radius: 7px;
 }
 
-.videoContainer iframe{
-    position: relative;
-    width: 100%;
-    margin: 0;
+.videoContainer iframe {
+  position: relative;
+  width: 100%;
+  margin: 0;
 }
 
 h1.section2Header {
-    font-size: 65px;
-    text-align: center;
+  font-size: 65px;
+  text-align: center;
 }
 
 h1.section_header {
-    font-size: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 div.box {
-    text-align: center;
-    background-color: #666;
-    margin: 24px;
-    padding: 36px 24px 40px 24px;
-    border-radius: 7px;
-    background-color: #FFF;
-    box-shadow: 0 0 10px #ff6600;
+  text-align: center;
+  background-color: #666;
+  margin: 24px;
+  padding: 36px 24px 40px 24px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ff6600;
 }
 
-
 div.icon {
-    width: 100%;
+  width: 100%;
 }
 
 footer.footClass {
-    background-color: #666;
-    padding-left: 10%;
+  background-color: #666;
+  padding-left: 10%;
 }
 
 footer.footClass h1 {
-    color: white;
-    font-size: 35px;
+  color: white;
+  font-size: 35px;
 }
 
 footer.footClass ul {
-    list-style: none;
-    text-align: left;
-    padding-left: 0;
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
 }
 
 footer.footClass ul li {
-    color: white;
-    font-size: 22px;
-    line-height: 1.2;;
+  color: white;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+/*Hieu's part*/
+.paymentBox {
+  text-align: center;
+  background-color: #666;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 36px 24px 40px 24px;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ff6600;
+  width: 500px;
+}
+
+.paymentMain-content {
+  height: 235px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 80px;
+}
+
+.payment_zone {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    align: center;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+    margin-top: -100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 50px;
+  text-align: center;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
 
 /*Custom style*/
+a:link {
+    text-decoration: none;
+}
+
 #section-1-gradient {
-    background-image: linear-gradient(#666, white);
+  background-image: linear-gradient(#666, white);
 }
 
 div.left-col {
-    margin-left: 30%;
+  margin-left: 30%;
 }
 
 div.rightSide-Col {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 /*MOBILE*/
 @media screen and (max-width: 1000px) {
-    ul.topnav li:not(:nth-child(1)){
-        display: none;
-    }
-    ul.topnav li.dropdownIcon{
-        display: block;
-        float: right;
-    }
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
 
-    ul.topnav.responsive li.dropdownIcon {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-    ul.topnav.responsive {
-        position: relative;
-    }
-    
-    ul.topnav.responsive li{
-        display: inline;
-        float: none;
-    }
+  ul.topnav.responsive {
+    position: relative;
+  }
 
-    ul.topnav.responsive li a{
-        display: block;
-        text-align: left;
-    }
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
 
-    h1.section2Header {
-        font-size: 45px;
-    }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 
-    .col-6, .col-4, .col-7 {
-        width: 100%;
-        margin: 0;
-    }
+  h1.section2Header {
+    font-size: 45px;
+  }
 
-    div.mobileRow {
-        width: 50%;
-        display: block;
-    }
-    
-    div.box {
-        padding: 5px;
-        display: block;
-    }
+  .col-6,
+  .col-4,
+  .col-7 {
+    width: 100%;
+    margin: 0;
+  }
 
-    div.left-col, div.rightSide-Col {
-        margin: 15px;
-    }
+  div.mobileRow {
+    width: 50%;
+    display: block;
+  }
 
-    input[type="text"] {
-        width: 350px;
+  div.box {
+    padding: 5px;
+    display: block;
+  }
 
-    }
+  div.left-col,
+  div.rightSide-Col {
+    margin: 15px;
+  }
 
-    button.functionButton {
-        font-size: 20px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  input[type="text"] {
+    width: 350px;
+  }
+
+  button.functionButton {
+    font-size: 20px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-
