@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="styleSheet" href="quanStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav sticky" id="dropdownClick">
+            <li><a href="index.html">&#8962; Home</a></li>
+            <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
+            <li class="dropdownIcon" id="mobileDropdown"><a href="#menu">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <section id = "section">
+        <div class = "paymentBox">
+            <div class="paymentMain-content" style="display: flex; justify-content: space-between">
+                <p><b>Business name</b><br>1 item(expand)</p>
+                <p style = "margin-left: auto"><b>25.00 NOK</b><br>inc.VAT</p>
+            </div>
+            <div class="input-icons">
+                <i class="fa fa-credit-card icon"></i>
+                <input class="input-field" text = "Card" placeholder="Card Number">
+            </div>
+            <div style = "display: flex;">
+                <input width = 50% placeholder = "MM/YY">
+                <input width = 50% style="margin-left: 10px" placeholder = "CVV">
+            </div>
+            <div class="payment_zone">
+                <button class="paymentButton">PAY NOK</button>
+            </div>
+            <div style="text-align: center; font-size: 20px;">OR</div>
+            <div class="payment_zone">
+                <button class="paymentButton">PAY BY CASH</button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="quanScript.js"></script>
+</body>
+</html>
