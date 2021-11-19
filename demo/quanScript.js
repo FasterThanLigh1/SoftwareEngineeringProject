@@ -10,6 +10,7 @@ class Food {
 }
 
 let sumArr = new Array();
+let res = 0;
 const sidemenu = document.getElementById("side");
 const purchaseButton = document.getElementById("purchase");
 const savePayment = document.getElementById("savePayment");
@@ -87,10 +88,19 @@ function addNumberAndText(id, obj, quantityId, price, food, minId, addId) {
   const addButton = document.getElementById(addId);
   const quantity = document.getElementById(quantityId);
   minButton.addEventListener("click", () => {
+    for(var i = 0; i < order.length; i++) {
+      if(order[i].name == food.name) {
+        console.log("found it " + i);
+        order.splice(i, 1);
+        console.log(order)
+        break;
+      }
+    }
     removeWord(id, obj, quantity, price);
   });
   addButton.addEventListener("click", () => {
     order.push(food);
+    console.log(order);
     addWord(food.name + ": " + food.price, id, obj, quantity, price);
   });
 }
@@ -103,7 +113,13 @@ purchaseMobile.addEventListener("click", () => {
   MobileMenu();
 });
 savePayment.addEventListener("click", () => {
+  //export list of item and total price of them
   localStorage.setItem("array", JSON.stringify(order));
+  let totalRes = 0;
+  for (var i = 0; i < sumArr.length; i++) {
+    totalRes += sumArr[i];
+  }
+  localStorage.setItem("total", JSON.stringify(totalRes));
   const res = JSON.parse(localStorage.getItem("array"));
 });
 
@@ -146,6 +162,15 @@ function removeWord(id, obj, quantityId, price) {
   if (myobj != null) {
     myobj.remove();
   }
+
+  for (var i = 0; i < order.length; i++) {
+    if (order[i].price == price) {
+      console.log("did")
+      sumArr.splice(i, 1);
+      break;
+    }
+  }
+
   for (var i = 0; i < sumArr.length; i++) {
     if (sumArr[i] == price) {
       sumArr.splice(i, 1);
