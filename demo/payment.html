@@ -7,15 +7,31 @@
     <title>Home</title>
     <link rel="styleSheet" href="quanStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/db25e2dbf3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <ul class="topnav sticky" id="dropdownClick">
-            <li><a href="index.html">&#8962; Home</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="topnav-right" id="purchase"><a href="#signin"><i class="fas fa-shopping-cart"></i> Your cart</a></li>
             <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
             <li class="dropdownIcon" id="mobileDropdown"><a href="#menu">&#9776;</a></li>
         </ul>
     </nav>
+
+    <div class="sidebar" id="side">
+        <ul id="list"></ul>
+        <div class="purchaseButton">
+            <div class="totalText" id="total">
+                cost: 0
+            </div>
+            <button class="paymentButton" id="savePayment">
+                <a style="color: white;" href="payment.html">
+                    PAYMENT
+                </a>
+            </button>
+        </div>
+    </div>
 
     <section id = "section">
         <div class = "paymentBox">
@@ -42,7 +58,6 @@
 
 
     </section>
-
-    <script src="quanScript.js"></script>
+    <script type="module" src="paymentScript.js"></script>
 </body>
 </html>

@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db25e2dbf3.js" crossorigin="anonymous"></script>
     <link rel="styleSheet" href="quanStyle.css">
 </head>
 <body>
     <nav>
         <ul class="topnav sticky" id="dropdownClick">
-            <li><a href="#home">&#8962; Home</a></li>
-            <li class="topnav-right" id="purchase"><a href="#signin">&#127991; Payment</a></li>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li class="topnav-right" id="purchase"><a href="#signin"><i class="fas fa-shopping-cart"></i> Your cart</a></li>
             <!--javascript:void(0) make path undefined, therefore make the menu stay when click-->
             <li class="dropdownIcon" id="mobileDropdown"><a href="#menu">&#9776;</a></li>
         </ul>
     </nav>
     <div class="sidebar" id="side">
-        <header>&#128722; Your cart</header>
         <ul id="list"></ul>
-        
         <div class="purchaseButton">
             <div class="totalText" id="total">
                 cost: 0
             </div>
-            <button class="paymentButton">
+            <button class="paymentButton" id="savePayment">
                 <a style="color: white;" href="payment.html">
                     PAYMENT
                 </a>
@@ -33,7 +35,6 @@
     </div>
 
     <section id="section">
-
     <h1 class="h1_header">FAST FOOD</h1>
     <h1 class="section_header">FAST FOOD</h1>
     <div class="container">
@@ -41,7 +42,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
+                        <img src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
                         Big French Fries
@@ -59,7 +60,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/fishburger.jfif" alt="">
+                        <img src="picture/fishburger.jfif" alt="">
                     </div>
                     <label for="">
                         Chicken Burger
@@ -77,7 +78,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
+                        <img src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
                         Small French Fries
@@ -95,7 +96,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/hamburger.jfif" alt="">
+                        <img  src="picture/hamburger.jfif" alt="">
                     </div>
                     <label for="">
                         Super XL Burger
@@ -113,7 +114,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/fishburger.jfif" alt="">
+                        <img  src="picture/fishburger.jfif" alt="">
                     </div>
                     <label for="">
                         Fish Burger
@@ -131,7 +132,7 @@
             <div class="col-4">
                 <div class="box">
                     <div class="icon">
-                        <img width="200" height="200" src="picture/frenchFries.jpg" alt="">
+                        <img  src="picture/frenchFries.jpg" alt="">
                     </div>
                     <label for="">
                         Yellow Fries
@@ -154,7 +155,7 @@
         <div class="col-4">
             <div class="box">
                 <div class="icon">
-                    <img width="200" height="200" src="picture/pepsi.jpg" alt="">
+                    <img  src="picture/pepsi.jpg" alt="">
                 </div>
                 <label for="">
                     Pepsi
@@ -172,7 +173,7 @@
         <div class="col-4">
             <div class="box">
                 <div class="icon">
-                    <img width="200" height="200" src="picture/sprite.jpg" alt="">
+                    <img  src="picture/sprite.jpg" alt="">
                 </div>
                 <label for="">
                     Sprite
@@ -189,9 +190,9 @@
         </div>
     </div>
 
-
+        
     </section>
 
-    <script src="quanScript.js"></script>
+    <script type="module" src="quanScript.js"></script>
 </body>
 </html>
