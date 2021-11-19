@@ -17,7 +17,7 @@ footer {
 }
 
 .totalText {
-  font-size: 40px;
+  font-size: 35px;
   color: rgb(39, 88, 248);
 }
 
@@ -63,7 +63,6 @@ footer {
   position: absolute;
   text-align: center;
   display: block;
-  text-align: center;
   top: 460px;
 }
 
@@ -145,7 +144,7 @@ article {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: auto;
   padding-top: 0%;
   padding-bottom: 4%;
@@ -153,7 +152,7 @@ article {
 }
 
 img {
-  width: 290px;
+  width: 260px;
   height: 200px;
   object-fit: fill;
   box-shadow: 0 0 10px #666;
@@ -377,7 +376,27 @@ footer.footClass ul li {
 
 /*Custom style*/
 a:link {
+    color:white;
+    background-color: transparent;
     text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 #section-1-gradient {
