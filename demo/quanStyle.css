@@ -4,6 +4,8 @@ footer {
   display: block;
 }
 
+
+
 .sticky {
   position: fixed;
   top: 0;
@@ -20,17 +22,17 @@ footer {
 }
 
 .sidebar {
-  top: 74px;
+  top: 76px;
   position: fixed;
   right: -250px;
   width: 250px;
   height: 100%;
-  background-color: gainsboro;
+  background-color: #b3b3b3;
   color: green;
   transition: all 0.5s ease; /*create transition time in 0.5s*/
 }
 
-.sidebar header {
+/*.sidebar header {
   font-size: 22px;
   line-height: 81px;
   color: white;
@@ -38,14 +40,16 @@ footer {
   list-style: 70px;
   background-color: #ff8000;
   user-select: none;
-}
+}*/
 
 .sidebar ul {
-  overflow: scroll;
+  margin-top: 0px;
+  overflow-x: hidden;
+  background-color: #cccccc;
   display: block;
   width: 100%;
-  height: 350px;
-  line-height: 65px;
+  height: 430px;
+  line-height: 37px;
   font-size: 20px;
   color: rgb(39, 88, 248);
   padding-left: 40px;
@@ -72,8 +76,10 @@ ul li:hover a {
 }
 
 body {
+  overflow-x: hidden;
   line-height: 1;
   margin: 0;
+  font-family:cursive;
 }
 
 nav {
@@ -146,6 +152,13 @@ article {
   background-color: #e6e6e6;
 }
 
+img {
+  width: 290px;
+  height: 200px;
+  object-fit: fill;
+  box-shadow: 0 0 10px #666;
+}
+
 .row {
   width: 100%;
   display: flex;
@@ -179,10 +192,15 @@ button.learnMore {
 }
 
 button.functionButton {
-  font-size: 30px;
-  width: 50px;
-  margin-left: 30px;
-  margin-right: 30px;
+  background-color: #ff6600; /* Green */
+  border-radius: 7px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .row::after {
@@ -201,7 +219,7 @@ button.functionButton {
   width: 25%;
 }
 .col-4 {
-  width: 33.33%;
+  width: 33%;
   display: inline-block;
 }
 .col-5 {
@@ -273,8 +291,8 @@ div.box {
   text-align: center;
   background-color: #666;
   margin: 24px;
-  padding: 36px 24px 40px 24px;
-  border-radius: 7px;
+  padding: 0px 0px 0px 0px;
+  border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0 10px #ff6600;
 }
@@ -305,6 +323,10 @@ footer.footClass ul li {
   line-height: 1.2;
 }
 
+.image {
+  object-fit: contain;
+}
+
 /*Hieu's part*/
 .paymentBox {
   text-align: center;
@@ -329,7 +351,7 @@ footer.footClass ul li {
     margin-bottom: 30px;
     display: block;
     text-align: center;
-    align: center;
+    align-items: center;
 }
 
 .input-icons i {
@@ -432,8 +454,9 @@ div.rightSide-Col {
 
   button.functionButton {
     font-size: 20px;
-    width: 30px;
+    width: 60px;
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
   }
 }
