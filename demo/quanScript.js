@@ -46,6 +46,15 @@ var q6 = {
 var q7 = {
   a: 0,
 };
+var q8 = {
+  a: 0,
+}
+var q9 = {
+  a: 0,
+}
+var q10 = {
+  a: 0,
+}
 
 //Create food
 const frenchFries = new Food("32.000", "Big French Fries");
@@ -56,6 +65,9 @@ const fishBurger = new Food("40.000", "Fish Burger");
 const yellowFrenchFries = new Food("30.000", "Yellow French Fries");
 const pepsi = new Food("20.000", "Pepsi");
 const sprite = new Food("20.000", "Sprite");
+const pudding = new Food("15.000", "Pudding");
+const strawberryCake = new Food("20.000", "Strawberry Cake");
+const taroCake = new Food("20.000", "Taro Cake");
 
 addNumberAndText("ff01", q0, "quantity0", 32000, frenchFries, "min0", "add0");
 addNumberAndText("ff02", q1, "quantity1", 40000, chickenBurger, "min1", "add1");
@@ -81,6 +93,9 @@ addNumberAndText(
 );
 addNumberAndText("ff07", q6, "quantity6", 20000, pepsi, "min6", "add6");
 addNumberAndText("ff08", q7, "quantity7", 20000, sprite, "min7", "add7");
+addNumberAndText("ff09", q8, "quantity8", 15000, pudding, "min8", "add8");
+addNumberAndText("ff10", q9, "quantity9", 20000, strawberryCake, "min9", "add9");
+addNumberAndText("ff11", q10, "quantity10", 20000, taroCake, "min10", "add10");
 
 //assign fuction to button
 function addNumberAndText(id, obj, quantityId, price, food, minId, addId) {
