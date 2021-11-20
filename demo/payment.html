@@ -55,9 +55,53 @@
                 <button class="paymentButton">PAY CASH</button>
             </div>
         </div>
-
-
     </section>
+
     <script type="module" src="paymentScript.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        function showPrompt(msg)
+        {
+            // CREATE A Promise TO RETURN
+            var p = new Promise(function(resolve, reject) {
+                
+                var dialog = $('<div/>', {class: 'popup'})
+                    .append(
+                        $('<p/>').html(msg)
+                    )
+                .append(
+                    $('<div/>', {class: 'text-right', style: 'display: flex; float: right'})
+                    .append($('<button/>', {class: 'confirmButton'}).html('Home page').on('click', function() {
+                        $('.overlay').remove();
+                        window.location.href = "index.html";
+                        // RESOLVE Promise TO true
+                    resolve(true);
+                }))
+                );
+                var overlay = $('<div/>', {class: 'overlay'})
+                .append(dialog);
+                
+                $('body').append(overlay);
+                $(dialog).animate({top: '15%'}, 1000);
+            });
+            
+            // RETURN THE Promise
+            return p;
+        }
+        
+        $(function() {
+            // HANDLE CLICK
+            $('.paymentButton').on('click',function(e) {
+                // PREVENT DEFAULT BEHAVIOUR FOR <a/>
+                e.preventDefault();
+        
+            // SAVE PROMISE RETURN
+            var res = showPrompt('Your payment has done');
+            res.then(function(ret) {
+                $("<a href='index.html'></a>").click();
+            })
+          });
+        });
+        </script>
 </body>
 </html>
