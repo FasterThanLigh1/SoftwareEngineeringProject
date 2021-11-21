@@ -9,6 +9,45 @@ class Food {
   }
 }
 
+/////////////HANDLE MODAL /////////////////////
+
+makeDetailButton("myModal", "myBtn", "closeBox");
+makeDetailButton("myModal1", "myBtn1", "closeBox1");
+makeDetailButton("myModal2", "myBtn2", "closeBox2");
+makeDetailButton("myModal3", "myBtn3", "closeBox3");
+makeDetailButton("myModal4", "myBtn4", "closeBox4");
+makeDetailButton("myModal5", "myBtn5", "closeBox5");
+makeDetailButton("myModal6", "myBtn6", "closeBox6");
+makeDetailButton("myModal7", "myBtn7", "closeBox7");
+makeDetailButton("myModal8", "myBtn8", "closeBox8");
+makeDetailButton("myModal9", "myBtn9", "closeBox9");
+makeDetailButton("myModal10", "myBtn10", "closeBox10");
+
+function makeDetailButton (modalId, buttonId, closeId) {
+  // Get the modal
+  var modal = document.getElementById(modalId);
+  // Get the button that opens the modal
+  var btn = document.getElementById(buttonId);
+  // Get the <span> element that closes the modal
+  var span = document.getElementById(closeId);
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+}
+
+///////////////////////////////////////////////
+
+
 let sumArr = new Array();
 let res = 0;
 const sidemenu = document.getElementById("side");
